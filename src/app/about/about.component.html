@@ -1,0 +1,9 @@
+<div [@goals]="goals.length">
+<p>
+  Who do you want to remove from your fiends list?
+</p>
+<div>
+<p class="remove-friend" *ngFor="let goal of goals,let i = index" (click)="removeItem(i)">{{ goal }}<br></p>
+</div>
+<p><a href="" (click)="sendMeHome()"><strong>Start over</strong></a></p>
+</div>
